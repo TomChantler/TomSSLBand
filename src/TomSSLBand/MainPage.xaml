@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="TomSSLBand.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TomSSLBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.Resources>
+            <Style TargetType="TextBlock" BasedOn="{StaticResource HeaderTextBlockStyle}">
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center">Tom SSL Band</TextBlock>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Sensor1Id" Margin="0,0,5,0" Foreground="Red" >&#x2665;</TextBlock>
+            <TextBlock x:Name="Sensor1Display">---</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Sensor2Id" Margin="0,0,5,0" ></TextBlock>
+            <TextBlock x:Name="Sensor2Display">---</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Sensor3Id" Margin="0,0,5,0" ></TextBlock>
+            <TextBlock x:Name="Sensor3Display">---</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Sensor4Id" Margin="0,0,5,0" ></TextBlock>
+            <TextBlock x:Name="Sensor4Display">---</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Sensor5Id" Margin="0,0,5,0" ></TextBlock>
+            <TextBlock x:Name="Sensor5Display">---</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="Sensor6Id" Margin="0,0,5,0" ></TextBlock>
+            <TextBlock x:Name="Sensor6Display">---</TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Page>
